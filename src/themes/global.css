@@ -1,14 +1,14 @@
 /* styles/globals.css */
 @font-face {
     font-family: 'Roadradio-Thin';
-    src: url('/fonts/Roadradio-Thin.ttf') format('truetype');
+    src: url('/fonts/RoadRadio-Thin.ttf') format('truetype');
     font-weight: 100;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Roadradio-Bold';
-    src: url('/fonts/Roadradio-Bold.ttf') format('truetype');
+    src: url('/fonts/RoadRadio-Bold.ttf') format('truetype');
     font-weight: 700;
     font-style: normal;
 }
