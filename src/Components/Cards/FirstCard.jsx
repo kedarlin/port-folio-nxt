@@ -10,18 +10,20 @@ const Home = () => {
   }, []);
 
   return (
-    <Flex justifyContent="flex-end" px="10%" id="home" pt={28}>
+    <Flex justifyContent="flex-end" px="10%" id="home" pt={12}>
       <Flex flex={1} direction="column">
         <Text fontFamily="Roadradio-Bold" fontSize={72}>
           <TypeAnimation
             sequence={[
               "Hello",
               2000,
+              "Vanakkam",
+              2000,
               "Konechiwa",
               2000,
+              "Gumasta",
+              1000,
               "Namaste",
-              2000,
-              "Vanakkam",
               2000,
               "Hola Amigos",
               2000,

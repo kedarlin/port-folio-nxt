@@ -4,7 +4,7 @@ import { FaFile } from "react-icons/fa";
 
 const About = () => {
   return (
-    <Flex pt={32} pb={12} bg="white" px="10%" id="about">
+    <Flex py={44} bg="white" px="10%" id="about">
       <Flex
         flex={1}
         fontSize="100px"

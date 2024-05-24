@@ -1,4 +1,10 @@
-import { Flex, Box, Text, Stack, StackItem, Button, Link } from "@chakra-ui/react";
+import {
+  Flex,
+  Text,
+  Stack,
+  Button,
+  Link,
+} from "@chakra-ui/react";
 import React from "react";
 
 const Navbar = () => {
@@ -7,19 +13,30 @@ const Navbar = () => {
       direction="row"
       alignItems="center"
       justifyContent="space-between"
-      px="10%"
-      mt="40px"
-      position="fixed"
-      width="100%"
-      bg="#121212"
+      mx="10%"
+      mt="30px"
+      p="10px 15px"
+      width="80%"
+      bg="#141414"
+      borderRadius={20}
       zIndex={7}
     >
       <Stack direction="row" spacing={14} fontWeight={600} letterSpacing={2}>
-        <Link href="#home" cursor="pointer">HOME</Link>
-        <Link href="#about" cursor="pointer">ABOUT</Link>
-        <Link href="#skills" cursor="pointer">SKILLS</Link>
-        <Link href="#" cursor="pointer">EDUCATION</Link>
-        <Link href="#" cursor="pointer">PROJECTS</Link>
+        <Link href="#home" cursor="pointer">
+          HOME
+        </Link>
+        <Link href="#about" cursor="pointer">
+          ABOUT
+        </Link>
+        <Link href="#skills" cursor="pointer">
+          SKILLS
+        </Link>
+        <Link href="#education" cursor="pointer">
+          EDUCATION
+        </Link>
+        <Link href="#" cursor="pointer">
+          PROJECTS
+        </Link>
       </Stack>
       <Button
         p="25px"
@@ -40,7 +57,7 @@ const Navbar = () => {
         <Text color="#656565" mr={2}>
           /hire
         </Text>
-        Hire me
+        CONTACT
         <Text color="#656565" ml={2}>
           /hire
         </Text>

@@ -2,13 +2,13 @@ import { Flex, Icon, Stack, Text } from "@chakra-ui/react";
 import React from "react";
 import { FaHtml5, FaJava, FaNode, FaPhp, FaPython, FaReact } from "react-icons/fa";
 import { FaC } from "react-icons/fa6";
-import { SiCsharp, SiExpress, SiFirebase, SiGit, SiJavascript, SiJquery, SiMongodb } from "react-icons/si";
+import { SiCsharp, SiExpress, SiFirebase, SiGit, SiJavascript, SiJquery, SiMongodb, SiMysql } from "react-icons/si";
 import { TbBrandNextjs } from "react-icons/tb";
 
 const Skills = () => {
   return (
     <Flex px="10%" py={20} direction="column" id="skills">
-      <Flex mt={28} mb={10}>
+      <Flex mt={24} mb={10}>
         <Flex flex={1} direction="column">
           <Text
             color="brend.400"
@@ -69,6 +69,12 @@ const Skills = () => {
             <Icon as={SiExpress} fontSize={72} />
             <Text fontWeight={500} fontSize={40} ml={12}>
               Express
+            </Text>
+          </Flex>
+          <Flex alignItems="center">
+            <Icon as={SiMysql} fontSize={72} />
+            <Text fontWeight={500} fontSize={40} ml={12}>
+              MySQL
             </Text>
           </Flex>
           <Flex alignItems="center">
