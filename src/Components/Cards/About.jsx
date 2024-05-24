@@ -18,12 +18,12 @@ const About = () => {
         <Text textAlign="right" color="black">
           About
         </Text>
-        <Text textAlign="right" color="#94E214" mt={-10}>
+        <Text textAlign="right" color="#94E214" mt={-10} zIndex={2}>
           ME
         </Text>
         <Text
           textAlign="left"
-          color="gray.50"
+          color="gray.100"
           mt={-32}
           ml={12}
           fontSize="150px"
