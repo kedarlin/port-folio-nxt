@@ -4,7 +4,7 @@ import { FaFile } from "react-icons/fa";
 
 const About = () => {
   return (
-    <Flex mt={12} height="90vh" pt={20} bg="white">
+    <Flex pt={32} pb={12} bg="white" px="10%" id="about">
       <Flex
         flex={1}
         fontSize="100px"
@@ -25,14 +25,12 @@ const About = () => {
           textAlign="left"
           color="gray.100"
           mt={-32}
-          ml={12}
-          fontSize="150px"
+          ml="-20%"
+          fontSize="140px"
         >
           ABOUT
         </Text>
         <Button
-          mr="30px"
-          ml="auto"
           color="black"
           p="30px 60px"
           border="2px"
@@ -40,6 +38,7 @@ const About = () => {
           width="fit-content"
           bg="white"
           borderRadius={10}
+          alignSelf="center"
           _hover={{ bg: "black", color: "white", transition: "0.5s" }}
         >
           Download CV
@@ -50,11 +49,11 @@ const About = () => {
         <Text
           maxHeight="60vh"
           color="black"
-          pl={12}
-          mr="30%"
+          px={12}
           fontFamily="sans-serif"
           fontSize={20}
           overflowY="scroll"
+          textAlign="justify"
           css={{
             wordSpacing: "5px",
             "&::-webkit-scrollbar": {

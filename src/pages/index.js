@@ -9,7 +9,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   return (
-    <Flex pt={36} direction="column">
+    <Flex direction="column">
       <FirstCard />
       <About />
       <Skills />

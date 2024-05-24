@@ -1,4 +1,4 @@
-import { Flex, Box, Text, Stack, StackItem, Button } from "@chakra-ui/react";
+import { Flex, Box, Text, Stack, StackItem, Button, Link } from "@chakra-ui/react";
 import React from "react";
 
 const Navbar = () => {
@@ -15,11 +15,11 @@ const Navbar = () => {
       zIndex={7}
     >
       <Stack direction="row" spacing={14} fontWeight={600} letterSpacing={2}>
-      <StackItem cursor="pointer">HOME</StackItem>
-        <StackItem cursor="pointer">ABOUT</StackItem>
-        <StackItem cursor="pointer">SKILLS</StackItem>
-        <StackItem cursor="pointer">EDUCATION</StackItem>
-        <StackItem cursor="pointer">PROJECTS</StackItem>
+        <Link href="#home" cursor="pointer">HOME</Link>
+        <Link href="#about" cursor="pointer">ABOUT</Link>
+        <Link href="#skills" cursor="pointer">SKILLS</Link>
+        <Link href="#" cursor="pointer">EDUCATION</Link>
+        <Link href="#" cursor="pointer">PROJECTS</Link>
       </Stack>
       <Button
         p="25px"
@@ -30,7 +30,12 @@ const Navbar = () => {
         fontFamily="Tech-Mono"
         fontSize={18}
         fontWeight={600}
-        _hover={{ bg: "white", color: "#141414", transition: "0.5s", borderColor: "#94E214" }}
+        _hover={{
+          bg: "white",
+          color: "#141414",
+          transition: "0.5s",
+          borderColor: "#94E214",
+        }}
       >
         <Text color="#656565" mr={2}>
           /hire
