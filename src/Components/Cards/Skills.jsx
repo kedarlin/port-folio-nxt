@@ -29,7 +29,7 @@ const Skills = () => {
         </Flex>
         <Stack
           flex={1}
-          spacing={4}
+          spacing={8}
           direction="column"
           maxHeight="340px"
           overflowY="scroll"
@@ -47,37 +47,37 @@ const Skills = () => {
             },
           }}
         >
-          <Flex alignItems="center">
+          <Flex alignItems="center" borderBottom="2px" borderColor="#303030" padding={4}>
             <Icon as={FaReact} fontSize={72} />
             <Text fontWeight={500} fontSize={40} ml={12}>
               React
             </Text>
           </Flex>
-          <Flex alignItems="center">
+          <Flex alignItems="center" borderBottom="2px" borderColor="#303030" padding={4}>
             <Icon as={TbBrandNextjs} fontSize={72} />
             <Text fontWeight={500} fontSize={40} ml={12}>
               NEXT
             </Text>
           </Flex>
-          <Flex alignItems="center">
+          <Flex alignItems="center" borderBottom="2px" borderColor="#303030" padding={4}>
             <Icon as={FaNode} fontSize={72} />
             <Text fontWeight={500} fontSize={40} ml={12}>
               NODE JS
             </Text>
           </Flex>
-          <Flex alignItems="center">
+          <Flex alignItems="center" borderBottom="2px" borderColor="#303030" padding={4}>
             <Icon as={SiExpress} fontSize={72} />
             <Text fontWeight={500} fontSize={40} ml={12}>
               Express
             </Text>
           </Flex>
-          <Flex alignItems="center">
+          <Flex alignItems="center" borderBottom="2px" borderColor="#303030" padding={4}>
             <Icon as={SiMysql} fontSize={72} />
             <Text fontWeight={500} fontSize={40} ml={12}>
               MySQL
             </Text>
           </Flex>
-          <Flex alignItems="center">
+          <Flex alignItems="center" borderBottom="2px" borderColor="#303030" padding={4}>
             <Icon as={SiMongodb} fontSize={72} />
             <Text fontWeight={500} fontSize={40} ml={12}>
               MONGO DB
@@ -113,7 +113,7 @@ const Skills = () => {
         </Flex>
         <Stack
           flex={1}
-          spacing={4}
+          spacing={8}
           direction="column"
           maxHeight="340px"
           overflowY="scroll"
@@ -131,49 +131,49 @@ const Skills = () => {
             },
           }}
         >
-          <Flex alignItems="center">
+          <Flex alignItems="center" borderBottom="2px" borderColor="#303030" padding={4}>
             <Icon as={FaC} fontSize={72} />
             <Text fontWeight={500} fontSize={40} ml={12}>
               C
             </Text>
           </Flex>
-          <Flex alignItems="center">
+          <Flex alignItems="center" borderBottom="2px" borderColor="#303030" padding={4}>
             <Icon as={FaPython} fontSize={72} />
             <Text fontWeight={500} fontSize={40} ml={12}>
               Python
             </Text>
           </Flex>
-          <Flex alignItems="center">
+          <Flex alignItems="center" borderBottom="2px" borderColor="#303030" padding={4}>
             <Icon as={FaJava} fontSize={72} />
             <Text fontWeight={500} fontSize={40} ml={12}>
               JAVA
             </Text>
           </Flex>
-          <Flex alignItems="center">
+          <Flex alignItems="center" borderBottom="2px" borderColor="#303030" padding={4}>
             <Icon as={SiJavascript} fontSize={72} />
             <Text fontWeight={500} fontSize={40} ml={12}>
               Javascript
             </Text>
           </Flex>
-          <Flex alignItems="center">
+          <Flex alignItems="center" borderBottom="2px" borderColor="#303030" padding={4}>
             <Icon as={SiCsharp} fontSize={72} />
             <Text fontWeight={500} fontSize={40} ml={12}>
               C Sharp
             </Text>
           </Flex>
-          <Flex alignItems="center">
+          <Flex alignItems="center" borderBottom="2px" borderColor="#303030" padding={4}>
             <Icon as={SiJquery} fontSize={72} />
             <Text fontWeight={500} fontSize={40} ml={12}>
               J Query
             </Text>
           </Flex>
-          <Flex alignItems="center">
+          <Flex alignItems="center" borderBottom="2px" borderColor="#303030" padding={4}>
             <Icon as={FaPhp} fontSize={72} />
             <Text fontWeight={500} fontSize={40} ml={12}>
               PHP
             </Text>
           </Flex>
-          <Flex alignItems="center">
+          <Flex alignItems="center" borderBottom="2px" borderColor="#303030" padding={4}>
             <Icon as={SiGit} fontSize={72} />
             <Text fontWeight={500} fontSize={40} ml={12}>
               GIT

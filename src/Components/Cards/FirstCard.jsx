@@ -10,7 +10,7 @@ const Home = () => {
   }, []);
 
   return (
-    <Flex justifyContent="flex-end" px="10%" id="home" pt={12}>
+    <Flex justifyContent="flex-end" px="10%" id="home" pt={12} pb={36}>
       <Flex flex={1} direction="column">
         <Text fontFamily="Roadradio-Bold" fontSize={72}>
           <TypeAnimation
@@ -37,7 +37,7 @@ const Home = () => {
           <span style={{ color: "#94E214" }}> KEDAR</span>,
           <Text fontSize={36}>Web developer</Text>
         </Text>
-        <Text fontSize={18} mt={6} fontWeight={600}>
+        <Text fontSize={18} mt={12} fontWeight={600}>
           Let&apos;s Get In Touch
         </Text>
         <Stack direction="row" fontSize={44} spacing={12} mt={4}>
@@ -93,7 +93,7 @@ const Home = () => {
       </Flex>
       <Flex flex={1}>
         <Image
-          src="/Assets/Kedar-Profile.png"
+          src="/Assets/about-img.jpg"
           alt="profile-img"
           width="100%"
           height="auto"
