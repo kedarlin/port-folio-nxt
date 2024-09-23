@@ -4,7 +4,7 @@ import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 
 const Projects = () => {
   return (
-    <Flex direction="column" px="10%" alignItems="center" py={32}>
+    <Flex direction="column" px="10%" alignItems="center" py={32} id="projects">
       <Text fontSize={72} fontFamily="RoadRadio-Bold" color="brend.400">
         PROJECTS
       </Text>

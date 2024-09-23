@@ -3,8 +3,12 @@ import React from "react";
 import { FaFile } from "react-icons/fa";
 
 const About = () => {
+  const openResume = () => {
+    window.open("/assets/KEDAR_RESUME.pdf", "_blank", "noopener,noreferrer");
+  };
+
   return (
-    <Flex py={44} bg="white" px="10%" id="about">
+    <Flex bg="white" px="10%" id="about">
       <Flex
         flex={1}
         fontSize="100px"
@@ -14,6 +18,7 @@ const About = () => {
         pr={16}
         borderRight="8px"
         borderRightColor="gray.200"
+        py={44}
       >
         <Text textAlign="right" color="black">
           About
@@ -40,20 +45,22 @@ const About = () => {
           borderRadius={10}
           alignSelf="center"
           _hover={{ bg: "black", color: "white", transition: "0.5s" }}
+          onClick={openResume}
         >
           Download CV
           <Icon as={FaFile} ml={4} />
         </Button>
       </Flex>
-      <Flex flex={1} justifyContent="flex-start">
+      <Flex flex={1} py={44} justifyContent="flex-start">
         <Text
           maxHeight="60vh"
-          color="black"
+          color="gray.700"
           px={12}
           fontFamily="sans-serif"
           fontSize={20}
           overflowY="scroll"
           textAlign="justify"
+          fontWeight={550}
           css={{
             wordSpacing: "5px",
             "&::-webkit-scrollbar": {
@@ -68,17 +75,21 @@ const About = () => {
             },
           }}
         >
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam eaque
-          obcaecati harum velit, sed suscipit quibusdam. Optio, sequi natus.
-          Iusto, nostrum! Officia exercitationem totam inventore molestias
-          repudiandae earum nostrum delectus! Lorem, ipsum dolor sit amet
-          consectetur adipisicing elit. Explicabo magnam molestiae nulla quas
-          illo minus, pariatur neque dolorem eius labore voluptate doloribus
-          culpa, ducimus ab voluptatum, eaque est necessitatibus odio? Lorem
-          ipsum dolor sit amet consectetur adipisicing elit. Autem sed et optio
-          molestias ducimus incidunt illum debitis! Commodi sapiente nam
-          accusamus, beatae, repudiandae, assumenda totam soluta impedit
-          voluptates architecto unde!
+          Hi, I&apos;m Kedar D, a passionate and driven tech enthusiast from
+          Chennai, India. I&apos;m currently pursuing a Bachelor of Technology
+          in Information Technology at St. Joseph&apos;s College of Engineering,
+          with a CGPA of 8.28/10. I thrive on solving complex problems through
+          programming and have extensive hands-on experience across various
+          technologies and frameworks, including the MERN stack, Next.js,
+          Tailwind, ELK, Firebase, and more. My skill set spans programming in
+          C, Python, Java, JavaScript, TypeScript, and my knowledge of
+          cybersecurity frameworks and networking adds depth to my expertise.
+          <br />
+          <br />
+          I&apos;m always eager to learn, create, and contribute to impactful
+          solutions. With a strong foundation in development, cybersecurity, and
+          networking, I strive to bridge the gap between technology and
+          real-world applications.
         </Text>
       </Flex>
     </Flex>

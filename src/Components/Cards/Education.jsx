@@ -17,14 +17,14 @@ const milestones = [
     {
       year: "2025",
       course: "B.Tech - Information Technology",
-      score: "8.28 CGPA",
+      score: "8.32 CGPA",
       details: "St Joseph's College Of Engineering, OMR, Chennai",
     },
 ];
 
 const Education = () => {
   return (
-    <Flex py={44} px="10%" id="education">
+    <Flex px="10%" id="education">
       <Flex
         flex={1}
         fontSize="100px"
@@ -32,6 +32,7 @@ const Education = () => {
         fontFamily="Roadradio-Bold"
         fontWeight={700}
         pr={16}
+        py={44}
       >
         <Text textAlign="right" color="brend.400" mt={-10} zIndex={2}>
           EDUCATION
@@ -44,6 +45,8 @@ const Education = () => {
         borderLeft="8px solid"
         borderLeftColor="gray.300"
         position="relative"
+        paddingTop={44}
+        paddingBottom={16}
       >
         {milestones.map((milestone, index) => (
           <Flex key={index} mb={12}>

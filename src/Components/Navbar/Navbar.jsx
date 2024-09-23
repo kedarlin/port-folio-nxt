@@ -1,13 +1,14 @@
-import {
-  Flex,
-  Text,
-  Stack,
-  Button,
-  Link,
-} from "@chakra-ui/react";
+import { Flex, Stack, Button, Link } from "@chakra-ui/react";
 import React from "react";
 
 const Navbar = () => {
+  const scrollToSection = (id) => {
+    const section = document.getElementById(id);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <Flex
       direction="row"
@@ -22,19 +23,19 @@ const Navbar = () => {
       zIndex={7}
     >
       <Stack direction="row" spacing={14} fontWeight={600} letterSpacing={2}>
-        <Link href="#home" cursor="pointer">
+        <Link cursor="pointer" onClick={() => scrollToSection("home")}>
           HOME
         </Link>
-        <Link href="#about" cursor="pointer">
+        <Link cursor="pointer" onClick={() => scrollToSection("about")}>
           ABOUT
         </Link>
-        <Link href="#skills" cursor="pointer">
+        <Link cursor="pointer" onClick={() => scrollToSection("skills")}>
           SKILLS
         </Link>
-        <Link href="#education" cursor="pointer">
+        <Link cursor="pointer" onClick={() => scrollToSection("education")}>
           EDUCATION
         </Link>
-        <Link href="#" cursor="pointer">
+        <Link cursor="pointer" onClick={() => scrollToSection("projects")}>
           PROJECTS
         </Link>
       </Stack>
@@ -54,13 +55,7 @@ const Navbar = () => {
           borderColor: "#94E214",
         }}
       >
-        <Text color="#656565" mr={2}>
-          /hire
-        </Text>
         CONTACT
-        <Text color="#656565" ml={2}>
-          /hire
-        </Text>
       </Button>
     </Flex>
   );

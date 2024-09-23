@@ -155,7 +155,7 @@ const Skills = () => {
               Javascript
             </Text>
           </Flex>
-          <Flex alignItems="center" borderBottom="2px" borderColor="#303030" padding={4}>
+          {/* <Flex alignItems="center" borderBottom="2px" borderColor="#303030" padding={4}>
             <Icon as={SiCsharp} fontSize={72} />
             <Text fontWeight={500} fontSize={40} ml={12}>
               C Sharp
@@ -178,7 +178,7 @@ const Skills = () => {
             <Text fontWeight={500} fontSize={40} ml={12}>
               GIT
             </Text>
-          </Flex>
+          </Flex> */}
         </Stack>
       </Flex>
     </Flex>
