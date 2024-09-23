@@ -9,6 +9,10 @@ const Navbar = () => {
     }
   };
 
+  const handleContactClick = () => {
+    window.location.href = "mailto:kedarkamaf@gmail.com";
+  };
+
   return (
     <Flex
       direction="row"
@@ -54,6 +58,7 @@ const Navbar = () => {
           transition: "0.5s",
           borderColor: "#94E214",
         }}
+        onClick={handleContactClick}
       >
         CONTACT
       </Button>
