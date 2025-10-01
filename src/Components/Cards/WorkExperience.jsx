@@ -3,30 +3,23 @@ import React from "react";
 
 const milestones = [
   {
-    year: "2019",
-    course: "SSLC",
-    score: "90%",
-    details: "Ramakrishna Mission Matrc Hr. Sec. School, T-Nagar, Chennai",
+    year: "2024 (September - May)",
+    course: "Rootquotient Technologies",
+    score: "",
+    details: "Intern",
   },
   {
-    year: "2021",
-    course: "HSC",
-    score: "93%",
-    details: "Ramakrishna Mission Matrc Hr. Sec. School, T-Nagar, Chennai",
-  },
-  {
-    year: "2025",
-    course: "B.Tech - Information Technology",
-    score: "8.32 CGPA",
-    details: "St Joseph's College Of Engineering, OMR, Chennai",
+    year: "2025 (May - Present)",
+    course: "Rootquotient Technologies",
+    score: "",
+    details: "Flutter developer",
   },
 ];
 
-const Education = () => {
+const WorkExperience = () => {
   return (
-    <Flex px="10%" id="education">
+    <Flex px="10%" id="experience" height="100vh">
       <Flex
-        height="100vh"
         width="60%"
         fontSize="100px"
         direction="column"
@@ -36,7 +29,7 @@ const Education = () => {
         py={44}
       >
         <Text textAlign="right" color="brend.400" mt={-10} zIndex={2}>
-          EDUCATION
+          WORK EXPERIENCE
         </Text>
       </Flex>
       <Flex
@@ -50,7 +43,7 @@ const Education = () => {
         paddingBottom={16}
       >
         {milestones.map((milestone, index) => (
-          <Flex key={index} mb={12}>
+          <Flex key={index} mb={16}>
             <Flex
               borderTop="6px solid"
               borderTopColor="gray.400"
@@ -81,4 +74,4 @@ const Education = () => {
   );
 };
 
-export default Education;
+export default WorkExperience;

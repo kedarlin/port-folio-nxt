@@ -1,14 +1,32 @@
 import { Flex, Icon, Stack, Text } from "@chakra-ui/react";
 import React from "react";
-import { FaHtml5, FaJava, FaNode, FaPhp, FaPython, FaReact } from "react-icons/fa";
+import { DiDart } from "react-icons/di";
+import {
+  FaHtml5,
+  FaJava,
+  FaNode,
+  FaPhp,
+  FaPython,
+  FaReact,
+} from "react-icons/fa";
 import { FaC } from "react-icons/fa6";
-import { SiCsharp, SiExpress, SiFirebase, SiGit, SiJavascript, SiJquery, SiMongodb, SiMysql } from "react-icons/si";
+import { RiFlutterFill } from "react-icons/ri";
+import {
+  SiCsharp,
+  SiExpress,
+  SiFirebase,
+  SiGit,
+  SiJavascript,
+  SiJquery,
+  SiMongodb,
+  SiMysql,
+} from "react-icons/si";
 import { TbBrandNextjs } from "react-icons/tb";
 
 const Skills = () => {
   return (
     <Flex px="10%" py={20} direction="column" id="skills">
-      <Flex mt={24} mb={10}>
+      <Flex mt={24} mb={10} height="100vh">
         <Flex flex={1} direction="column">
           <Text
             color="brend.400"
@@ -47,37 +65,67 @@ const Skills = () => {
             },
           }}
         >
-          <Flex alignItems="center" borderBottom="2px" borderColor="#303030" padding={4}>
+          <Flex
+            alignItems="center"
+            borderBottom="2px"
+            borderColor="#303030"
+            padding={4}
+          >
+            <Icon as={RiFlutterFill} fontSize={72} />
+            <Text fontWeight={500} fontSize={40} ml={12}>
+              FLUTTER
+            </Text>
+          </Flex>
+          <Flex
+            alignItems="center"
+            borderBottom="2px"
+            borderColor="#303030"
+            padding={4}
+          >
             <Icon as={FaReact} fontSize={72} />
             <Text fontWeight={500} fontSize={40} ml={12}>
               React
             </Text>
           </Flex>
-          <Flex alignItems="center" borderBottom="2px" borderColor="#303030" padding={4}>
-            <Icon as={TbBrandNextjs} fontSize={72} />
-            <Text fontWeight={500} fontSize={40} ml={12}>
-              NEXT
-            </Text>
-          </Flex>
-          <Flex alignItems="center" borderBottom="2px" borderColor="#303030" padding={4}>
+          <Flex
+            alignItems="center"
+            borderBottom="2px"
+            borderColor="#303030"
+            padding={4}
+          >
             <Icon as={FaNode} fontSize={72} />
             <Text fontWeight={500} fontSize={40} ml={12}>
               NODE JS
             </Text>
           </Flex>
-          <Flex alignItems="center" borderBottom="2px" borderColor="#303030" padding={4}>
+          <Flex
+            alignItems="center"
+            borderBottom="2px"
+            borderColor="#303030"
+            padding={4}
+          >
             <Icon as={SiExpress} fontSize={72} />
             <Text fontWeight={500} fontSize={40} ml={12}>
               Express
             </Text>
           </Flex>
-          <Flex alignItems="center" borderBottom="2px" borderColor="#303030" padding={4}>
+          <Flex
+            alignItems="center"
+            borderBottom="2px"
+            borderColor="#303030"
+            padding={4}
+          >
             <Icon as={SiMysql} fontSize={72} />
             <Text fontWeight={500} fontSize={40} ml={12}>
               MySQL
             </Text>
           </Flex>
-          <Flex alignItems="center" borderBottom="2px" borderColor="#303030" padding={4}>
+          <Flex
+            alignItems="center"
+            borderBottom="2px"
+            borderColor="#303030"
+            padding={4}
+          >
             <Icon as={SiMongodb} fontSize={72} />
             <Text fontWeight={500} fontSize={40} ml={12}>
               MONGO DB
@@ -92,7 +140,7 @@ const Skills = () => {
         </Stack>
       </Flex>
 
-      <Flex mt={44}>
+      <Flex mt={44} height="100vh">
         <Flex flex={1} direction="column">
           <Text
             color="brend.400"
@@ -131,28 +179,48 @@ const Skills = () => {
             },
           }}
         >
-          <Flex alignItems="center" borderBottom="2px" borderColor="#303030" padding={4}>
+          <Flex
+            alignItems="center"
+            borderBottom="2px"
+            borderColor="#303030"
+            padding={4}
+          >
+            <Icon as={DiDart} fontSize={72} />
+            <Text fontWeight={500} fontSize={40} ml={12}>
+              DART
+            </Text>
+          </Flex>
+          <Flex
+            alignItems="center"
+            borderBottom="2px"
+            borderColor="#303030"
+            padding={4}
+          >
+            <Icon as={SiJavascript} fontSize={72} />
+            <Text fontWeight={500} fontSize={40} ml={12}>
+              Javascript
+            </Text>
+          </Flex>
+          <Flex
+            alignItems="center"
+            borderBottom="2px"
+            borderColor="#303030"
+            padding={4}
+          >
             <Icon as={FaC} fontSize={72} />
             <Text fontWeight={500} fontSize={40} ml={12}>
               C
             </Text>
           </Flex>
-          <Flex alignItems="center" borderBottom="2px" borderColor="#303030" padding={4}>
+          <Flex
+            alignItems="center"
+            borderBottom="2px"
+            borderColor="#303030"
+            padding={4}
+          >
             <Icon as={FaPython} fontSize={72} />
             <Text fontWeight={500} fontSize={40} ml={12}>
               Python
-            </Text>
-          </Flex>
-          <Flex alignItems="center" borderBottom="2px" borderColor="#303030" padding={4}>
-            <Icon as={FaJava} fontSize={72} />
-            <Text fontWeight={500} fontSize={40} ml={12}>
-              JAVA
-            </Text>
-          </Flex>
-          <Flex alignItems="center" borderBottom="2px" borderColor="#303030" padding={4}>
-            <Icon as={SiJavascript} fontSize={72} />
-            <Text fontWeight={500} fontSize={40} ml={12}>
-              Javascript
             </Text>
           </Flex>
           {/* <Flex alignItems="center" borderBottom="2px" borderColor="#303030" padding={4}>

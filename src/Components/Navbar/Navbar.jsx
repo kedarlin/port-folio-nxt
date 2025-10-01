@@ -1,7 +1,10 @@
 import { Flex, Stack, Button, Link } from "@chakra-ui/react";
-import React from "react";
+import React, { useState, useEffect } from "react";
 
 const Navbar = () => {
+  const [show, setShow] = useState(true);
+  const [lastScrollY, setLastScrollY] = useState(0);
+
   const scrollToSection = (id) => {
     const section = document.getElementById(id);
     if (section) {
@@ -13,20 +16,45 @@ const Navbar = () => {
     window.location.href = "mailto:kedarkamaf@gmail.com";
   };
 
+  useEffect(() => {
+    const controlNavbar = () => {
+      if (window.scrollY > lastScrollY) {
+        // scrolling down → hide
+        setShow(false);
+      } else {
+        // scrolling up → show
+        setShow(true);
+      }
+      setLastScrollY(window.scrollY);
+    };
+
+    window.addEventListener("scroll", controlNavbar);
+    return () => {
+      window.removeEventListener("scroll", controlNavbar);
+    };
+  }, [lastScrollY]);
+
   return (
     <Flex
       direction="row"
       alignItems="center"
       justifyContent="space-between"
-      mx="10%"
-      mt="30px"
-      p="10px 15px"
-      width="80%"
+      p="15px 30px"
       bg="#141414"
-      borderRadius={20}
       zIndex={7}
+      position="fixed"
+      top={show ? "0" : "-80px"}
+      pl={100}
+      width="100%"
+      transition="top 0.4s ease-in-out"
     >
-      <Stack direction="row" spacing={14} fontWeight={600} letterSpacing={2}>
+      <Stack
+        direction="row"
+        spacing={14}
+        fontWeight={600}
+        letterSpacing={2}
+        px={34}
+      >
         <Link cursor="pointer" onClick={() => scrollToSection("home")}>
           HOME
         </Link>
@@ -35,6 +63,9 @@ const Navbar = () => {
         </Link>
         <Link cursor="pointer" onClick={() => scrollToSection("skills")}>
           SKILLS
+        </Link>
+        <Link cursor="pointer" onClick={() => scrollToSection("experience")}>
+          EXPERIENCE
         </Link>
         <Link cursor="pointer" onClick={() => scrollToSection("education")}>
           EDUCATION

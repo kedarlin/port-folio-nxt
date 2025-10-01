@@ -75,21 +75,19 @@ const About = () => {
             },
           }}
         >
-          Hi, I&apos;m Kedar D, a passionate and driven tech enthusiast from
-          Chennai, India. I&apos;m currently pursuing a Bachelor of Technology
-          in Information Technology at St. Joseph&apos;s College of Engineering,
-          with a CGPA of 8.28/10. I thrive on solving complex problems through
-          programming and have extensive hands-on experience across various
-          technologies and frameworks, including the MERN stack, Next.js,
-          Tailwind, ELK, Firebase, and more. My skill set spans programming in
-          C, Python, Java, JavaScript, TypeScript, and my knowledge of
-          cybersecurity frameworks and networking adds depth to my expertise.
-          <br />
-          <br />
-          I&apos;m always eager to learn, create, and contribute to impactful
-          solutions. With a strong foundation in development, cybersecurity, and
-          networking, I strive to bridge the gap between technology and
-          real-world applications.
+          Hi, I&apos;m Kedar, a Software Development Engineer – I based in
+          Chennai, India. I specialize in building scalable, high-performance
+          mobile applications and have professional experience as a Flutter
+          Developer, where I&apos;ve developed Android and iOS apps from the
+          ground. My work involves implementing secure token-based
+          authentication, designing clean architectures with MVC patterns
+          (separating model, view, bloc, and service layers), and seamlessly
+          integrating APIs to deliver robust solutions. Beyond mobile, I have
+          strong hands-on experience with the MERN stack (MongoDB, Express.js,
+          React, Node.js), enabling me to work across both frontend and backend
+          ecosystems. I thrive on solving complex problems, learning new
+          technologies, and building impactful software that bridges the gap
+          between innovation and real-world applications.
         </Text>
       </Flex>
     </Flex>
